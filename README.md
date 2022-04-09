@@ -15,5 +15,5 @@
 - Create README
 - Create index.html layout
 - Create hobbies.html layout
-- Create bio.html layout
+- Create about.html layout
 - Create style.css
