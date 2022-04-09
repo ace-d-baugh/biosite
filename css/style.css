@@ -61,11 +61,39 @@
 .hero-section {
    height: 100vh;
    width: 100vw;
+   display: flex; /* Fix later */
 }
 
 .container {
    margin: auto;
    width: 80vw;
+}
+
+.timeline {
+   display: flex;
+   justify-content: space-around;
+   padding: 1em;
+}
+
+.card {
+   height: 500px;
+   width: 300px;
+   border: var(--purple) 2px solid;
+   border-radius: 0 0  15px 15px;
+}
+
+.card-photo {
+   display: flex;
+}
+
+.card-caption {
+   background-color: var(--blue);
+   text-align: center;
+   padding: .5em;
+}
+
+.card-text {
+   padding: 1em;
 }
 
 .footer {
