@@ -2,9 +2,9 @@
 ## Contributors
 - Robert Kumar
 - Ace Baugh
-***
+
 ## Change Log:
-___
+
 ### Week 4:
 - Style Guide Created
 - Interview of Subject
