@@ -1,10 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
 
+:root {
+   --white: #cccccc;
+   --blue: #1c1884;
+   --purple: #523cc6;
+   --orange: #f7820d;
+   --yellow: #ffd605;
+}
+
+/* Header Font */
 .limelight {
    font-family: 'Limelight', serif;
 }
 
+/* Regular Font */
 .poiret {
    font-family: 'Poiret One', sans-serif;
+   font-weight: 900;
 }
 
+.navbar {
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo-text {
+   margin: .5em;
+   font-size: 2em;
+}
+
+.nav-links {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav-link {
+   font-size: 1em;
+   display: flex;
+}
+
+.nav-link a {
+   color: var(--yellow);
+   text-decoration: none;
+   padding: 1.25em;
+}
+
+.nav-links a:hover {
+   background-color: var(--yellow);
+   color: var(--blue);
+}
+
+.nav-selected {
+   background-color: var(--orange);
+}
+
+.nav-selected a {
+   color: var(--blue);
+}
+
+.hero-section {
+   height: 100vh;
+   width: 100vw;
+}
+
+.container {
+   margin: auto;
+   width: 80vw;
+}
+
+.footer {
+   width: 100vw;
+   padding: .5em;
+}
+
+.font-blue {
+   color: var(--blue);
+}
+
+.font-purple {
+   color: var(--purple);
+}
+
+.font-yellow {
+   color: var(--yellow);
+}
+
+.font-orange {
+   color: var(--orange);
+}
+
+.bg-purple {
+   background-color: var(--purple);
+}
+
+.bg-blue {
+   background-color: var(--blue);
+}
+
+.bg-white {
+   background-color: var(--white);
+}
