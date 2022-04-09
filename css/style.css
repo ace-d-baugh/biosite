@@ -105,8 +105,16 @@ body {
    padding: 1em;
 }
 
+.hobby-text, .hobby-photo {
+   margin: 0 1em;
+}
+
 .hobbies-photo {
-   margin: 1em;
+   display: flex;
+}
+
+.hobbies-photo img {
+   border: var(--yellow) 6px groove;
 }
 
 .podcast {
@@ -157,25 +165,25 @@ body {
 }
 
 h1 {
-   font-size: xx-large;
-}
-
-h2 {
    font-size: x-large;
 }
 
-h3 {
+h2 {
    font-size: larger;
 }
 
-h4 {
+h3 {
    font-size: large;
 }
 
-h5 {
+h4 {
    font-size: medium;
 }
 
-h6 {
+h5 {
    font-size: small;
+}
+
+h6 {
+   font-size: smaller;
 }
