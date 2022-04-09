@@ -19,6 +19,10 @@
    font-weight: 900;
 }
 
+body {
+   background-color: var(--white);
+}
+
 .navbar {
    display: flex;
    justify-content: space-between;
@@ -94,6 +98,29 @@
 
 .card-text {
    padding: 1em;
+}
+
+.about, .hobbies {
+   display: flex;
+   padding: 1em;
+}
+
+.hobbies-photo {
+   margin: 1em;
+}
+
+.podcast {
+   text-align: center;
+   padding: 1em;
+}
+
+.podcast button {
+   padding: .75em;
+   margin: .5em;
+   cursor: pointer;
+   background-color: var(--purple);
+   border-radius: 5px;
+   color: var(--yellow);
 }
 
 .footer {
