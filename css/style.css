@@ -6,16 +6,18 @@
    --purple: #523cc6;
    --orange: #f7820d;
    --yellow: #ffd605;
+   --regular: 'Poiret One', sans-serif;
+   --accent: 'Limelight', serif;
 }
 
-/* Header Font */
-.limelight {
-   font-family: 'Limelight', serif;
+/* Accent Font */
+.accent {
+   font-family: var(--accent);
 }
 
 /* Regular Font */
-.poiret {
-   font-family: 'Poiret One', sans-serif;
+.regular {
+   font-family: var(--regular);
    font-weight: 900;
 }
 
@@ -185,4 +187,43 @@ h5 {
 
 h6 {
    font-size: smaller;
+}
+
+
+/* HERO SECTION */
+
+.large-text {
+   font-family: var(--accent);
+   font-size: 100vh;
+   -webkit-text-fill-color: var(--blue);
+   text-shadow: -5px 5px 25px var(--yellow),
+                        5px 5px 25px var(--yellow),
+   				         5px -5px 25px var(--yellow),
+   				         -5px -5px 25px var(--yellow);
+}
+
+.medium-text {
+   font-family: var(--regular);
+   font-weight: 900;
+   font-size: 80vh;
+   color: var(--blue);
+   z-index: 40;
+}
+
+.small-text {
+   font-family: var(--regular);
+   font-weight: 900;
+   font-size: 20vh;
+}
+
+.first {
+
+}
+
+.second {
+
+}
+
+.third {
+
 }
