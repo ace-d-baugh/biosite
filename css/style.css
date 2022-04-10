@@ -26,6 +26,9 @@ body {
 }
 
 .navbar {
+   position: absolute;
+   z-index: 100;
+   width: 100vw;
    display: flex;
    justify-content: space-between;
 }
@@ -49,6 +52,7 @@ body {
    color: var(--yellow);
    text-decoration: none;
    padding: 1.25em;
+   transition: all 0.5s ease-out;
 }
 
 .nav-links a:hover {
@@ -67,7 +71,7 @@ body {
 .hero-section {
    height: 100vh;
    width: 100vw;
-   display: flex; /* Fix later */
+   overflow: hidden;
 }
 
 .container {
@@ -192,38 +196,237 @@ h6 {
 
 /* HERO SECTION */
 
+.nerdy, .hopeful, .passionate, .hero-image {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
 .large-text {
    font-family: var(--accent);
    font-size: 100vh;
-   -webkit-text-fill-color: var(--blue);
+   /* color: var(--blue);
    text-shadow: -5px 5px 25px var(--yellow),
                         5px 5px 25px var(--yellow),
-   				         5px -5px 25px var(--yellow),
-   				         -5px -5px 25px var(--yellow);
+                        5px -5px 25px var(--yellow),
+                        -5px -5px 25px var(--yellow); */
+   color: transparent;
+   -webkit-text-stroke-width: 20px;
+   -webkit-text-stroke-color: var(--yellow);
+   margin-top: -20vh;
 }
 
 .medium-text {
+   width: 100%;
    font-family: var(--regular);
    font-weight: 900;
-   font-size: 80vh;
-   color: var(--blue);
-   z-index: 40;
+   font-size: 20em;
+   text-align: center;
+   color: var(--purple);
 }
 
 .small-text {
+   height: 100%;
    font-family: var(--regular);
    font-weight: 900;
    font-size: 20vh;
+   color: var(--orange);
+   margin-top: -40vh;
 }
 
-.first {
-
+/* ******NERDY******* */
+.nerdy-sm {
+   animation: nerdy-scroll-sm 15s linear infinite;
 }
 
-.second {
-
+.nerdy-md {
+   animation: nerdy-scroll-md 15s linear infinite;
 }
 
-.third {
+.nerdy-lg {
+   animation: nerdy-scroll-lg 15s linear infinite;
+}
 
+@keyframes nerdy-scroll-lg {
+   0% {
+      transform: translateX(100%);  /* <-- Started */
+   }
+   33% {
+      transform: translateX(-300%);  /* <-- Done and Waiting*/
+   }
+   66% {
+      transform: translateX(-300%);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(-300%);  /* <-- Finished */
+   }
+}
+
+@keyframes nerdy-scroll-md {
+   0% {
+      transform: translateY(100vh);  /* <-- Started */
+   }
+   33% {
+      transform: translateY(-400vh);  /* <-- Done and Waiting*/
+   }
+   66% {
+      transform: translateY(-400vh);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateY(-400vh);  /* <-- Finished */
+   }
+}
+
+@keyframes nerdy-scroll-sm {
+   0% {
+      transform: translateX(-50vw);  /* <-- Started */
+   }
+   33% {
+      transform: translateX(200vw);  /* <-- Done and Waiting*/
+   }
+   66% {
+      transform: translateX(200vw);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(200vw);  /* <-- Finished */
+   }
+}
+
+/* ******HOPEFUL******* */
+.hopeful-sm {
+   animation: hopeful-scroll-sm 15s linear infinite;
+}
+
+.hopeful-md {
+   animation: hopeful-scroll-md 15s linear infinite;
+}
+
+.hopeful-lg {
+   animation: hopeful-scroll-lg 15s linear infinite;
+}
+
+@keyframes hopeful-scroll-lg {
+   0% {
+      transform: translateX(100%);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateX(100%);  /* <-- Started */
+   }
+   66% {
+      transform: translateX(-300%);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(-300%);  /* <-- Finished */
+   }
+}
+
+@keyframes hopeful-scroll-md {
+   0% {
+      transform: translateY(100vh);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateY(100vh);  /* <-- Started */
+   }
+   66% {
+      transform: translateY(-400vh);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateY(-400vh);  /* <-- Finished */
+   }
+}
+
+@keyframes hopeful-scroll-sm {
+   0% {
+      transform: translateX(-50vw);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateX(-50vw);  /* <-- Started */
+   }
+   66% {
+      transform: translateX(200vw);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(200vw);  /* <-- Finished */
+   }
+}
+
+/* ******PASSIONATE******* */
+.passionate-sm {
+   bottom: 10%;
+   left: -75%;
+   animation: passionate-scroll-sm 15s linear infinite;
+}
+
+.passionate-md {
+   animation: passionate-scroll-md 15s linear infinite;
+}
+
+.passionate-lg {
+   right: -420%;
+   animation: passionate-scroll-lg 15s linear infinite;
+}
+
+@keyframes passionate-scroll-lg {
+   0% {
+      transform: translateX(100%);  /* <-- Waiting */
+   }
+   30% {
+      transform: translateX(100%);  /* <-- Waiting */
+   }
+   66% {
+      transform: translateX(100%);  /* <-- Started */
+   }
+   100% {
+      transform: translateX(-400%);  /* <-- Finished */
+   }
+}
+
+@keyframes passionate-scroll-md {
+   0% {
+      transform: translateY(100vh);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateY(100vh);  /* <-- Waiting */
+   }
+   66% {
+      transform: translateY(100vh);  /* <-- Started */
+   }
+   100% {
+      transform: translateY(-400vh);  /* <-- Finished*/
+   }
+}
+
+@keyframes passionate-scroll-sm {
+   0% {
+      transform: translateX(-75vw);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateX(-75vw);  /* <-- Waiting */
+   }
+   66% {
+      transform: translateX(-75vw);  /* <-- Started */
+   }
+   100% {
+      transform: translateX(200vw);  /* <-- Finished*/
+   }
+}
+
+/* *******HERO IMAGE ******** */
+.hero-image {
+   position: relative;
+   overflow: hidden;
+}
+
+.hero-image img {
+   opacity: .2;
+   position: absolute;
+   top: -9999px;
+   bottom: -9999px;
+   left: -9999px;
+   right: -9999px;
+   margin: auto;
+   min-width: 100vw;
 }
