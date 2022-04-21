@@ -25,9 +25,7 @@ body {
    background-color: var(--white);
 }
 
-.navbar {
-   position: absolute;
-   z-index: 100;
+.navbar, .footer {
    width: 100vw;
    display: flex;
    justify-content: space-between;
@@ -38,9 +36,10 @@ body {
    font-size: 2em;
 }
 
-.nav-links {
+.nav-links, .foot-links {
    display: flex;
    list-style-type: none;
+   margin-right: 1em;
 }
 
 .nav-link {
@@ -137,8 +136,18 @@ body {
 }
 
 .footer {
+   display: flex;
    width: 100vw;
    padding: .5em;
+}
+
+.foot-link {
+   margin: 0 1em;
+}
+
+.foot-link a {
+   color: var(--yellow);
+   text-decoration: none;
 }
 
 .font-blue {
