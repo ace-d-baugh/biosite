@@ -201,7 +201,6 @@ h6 {
       width: 50%;
       margin: 0 auto;
    }
-
 }
 
 body {
@@ -219,17 +218,6 @@ body {
    color: var(--yellow);
    text-decoration: none;
    transition: background-color 0.5s ease-out;
-}
-
-/* HERO SECTION */
-.hero-section {
-   width: 100%;
-   overflow: hidden;
-   position: relative;
-   left: 0;
-}
-
-.body-section {
 }
 
 .card {

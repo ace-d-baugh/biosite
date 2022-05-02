@@ -1,0 +1,332 @@
+/* HERO SECTION */
+.hero-section {
+   width: 100%;
+   height: 40em;
+   overflow: hidden;
+   position: relative;
+   left: 0;
+}
+
+.adj {
+   width: 100%;
+   height: 100%;
+}
+
+.nerdy, .hopeful, .passionate, .hero-image {
+   overflow: hidden;
+   position: absolute;
+   left: 0;
+}
+
+
+.large-text {
+   font-family: var(--accent);
+   font-size: 35em;
+   color: transparent;
+   -webkit-text-stroke-width: 10px;
+   -webkit-text-stroke-color: var(--yellow);
+   margin-top: -200px;
+}
+
+.medium-text {
+   font-family: var(--regular);
+   -webkit-text-stroke-width: 7px;
+   -webkit-text-stroke-color: var(--purple);
+   font-weight: 900;
+   font-size: 15em;
+   text-align: center;
+   color: var(--purple);
+}
+
+.small-text {
+   text-align: right;
+   font-family: var(--regular);
+   font-weight: 900;
+   font-size: 4em;
+   color: var(--orange);
+   margin-top: -45px;
+   margin-right: 20px;
+}
+
+/* ******NERDY******* */
+.nerdy-lg {
+   animation: nerdy-scroll-lg 15s linear infinite;
+}
+
+.nerdy-md {
+   animation: nerdy-scroll-md 15s linear infinite;
+}
+
+.nerdy-sm {
+   animation: nerdy-scroll-sm 15s linear infinite;
+}
+
+@keyframes nerdy-scroll-md {
+   0% {
+      transform: translateY(200%);  /* <-- Started */
+   }
+   33% {
+      transform: translateY(-300%);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateY(-300%);  /* <-- Finished */
+   }
+}
+
+@keyframes nerdy-scroll-sm {
+   0% {
+      transform: translateX(-100%);  /* <-- Started */
+   }
+   13% {
+      transform: translateX(0vw);  /* <-- Finished */
+   }
+   27% {
+      transform: translateX(0vw);  /* <-- Finished */
+   }
+   33% {
+      transform: translateX(50%);  /* <-- Finished */
+   }
+   100% {
+      transform: translateX(50%);  /* <-- Finished */
+   }
+
+}
+
+/* For extremely small screen devices (767px and below) */
+@media only screen and (max-width: 767px) {
+
+   @keyframes nerdy-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      33% {
+         transform: translateX(-500vw);  /* <-- Finished */
+      }
+      100% {
+         transform: translateX(-500vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+   @keyframes nerdy-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      33% {
+         transform: translateX(-300vw);  /* <-- Finished */
+      }
+      100% {
+         transform: translateX(-300vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+   @keyframes nerdy-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      33% {
+         transform: translateX(-200vw);  /* <-- Finished */
+      }
+      100% {
+         transform: translateX(-200vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* ******HOPEFUL******* */
+.hopeful-lg {
+   animation: hopeful-scroll-lg 15s linear infinite;
+}
+
+.hopeful-md {
+   animation: hopeful-scroll-md 15s linear infinite;
+}
+
+.hopeful-sm {
+   animation: hopeful-scroll-sm 15s linear infinite;
+}
+
+@keyframes hopeful-scroll-md {
+   0% {
+      transform: translateY(200%);  /* <-- Started */
+   }
+   33% {
+      transform: translateY(200%);  /* <-- Started */
+   }
+   66% {
+      transform: translateY(-300%);  /* <-- Finished */
+   }
+   100% {
+      transform: translateY(-300%);  /* <-- Finished */
+   }
+}
+
+@keyframes hopeful-scroll-sm {
+   0% {
+      transform: translateX(-100%);  /* <-- Started */
+   }
+   33% {
+      transform: translateX(-100%);  /* <-- Started */
+   }
+   46% {
+      transform: translateX(0vw);  /* <-- Finished */
+   }
+   60% {
+      transform: translateX(0vw);  /* <-- Finished */
+   }
+   66% {
+      transform: translateX(100%);  /* <-- Finished */
+   }
+   100% {
+      transform: translateX(100%);  /* <-- Finished */
+   }
+}
+
+/* For extremely small screen devices (767px and below) */
+@media only screen and (max-width: 767px) {
+
+   @keyframes hopeful-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      33% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      66% {
+         transform: translateX(-700vw);  /* <-- Finished */
+      }
+      100% {
+         transform: translateX(-700vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+   @keyframes hopeful-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      33% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      66% {
+         transform: translateX(-300vw);  /* <-- Finished */
+      }
+      100% {
+         transform: translateX(-300vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+   @keyframes hopeful-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      33% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      66% {
+         transform: translateX(-200vw);  /* <-- Finished */
+      }
+      100% {
+         transform: translateX(-200vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* ******PASSIONATE******* */
+.passionate-lg {
+   animation: passionate-scroll-lg 15s linear infinite;
+}
+
+.passionate-md {
+   animation: passionate-scroll-md 15s linear infinite;
+}
+
+.passionate-sm {
+   animation: passionate-scroll-sm 15s linear infinite;
+}
+
+@keyframes passionate-scroll-md {
+   0% {
+      transform: translateY(200%);  /* <-- Started */
+   }
+   66% {
+      transform: translateY(200%);  /* <-- Started */
+   }
+   100% {
+      transform: translateY(-300%);  /* <-- Finished */
+   }
+}
+
+@keyframes passionate-scroll-sm {
+   0% {
+      transform: translateX(-100%);  /* <-- Started */
+   }
+   66% {
+      transform: translateX(-100%);  /* <-- Started */
+   }
+   79% {
+      transform: translateX(0vw);  /* <-- Finished */
+   }
+   93% {
+      transform: translateX(0vw);  /* <-- Finished */
+   }
+   100% {
+      transform: translateX(100%);  /* <-- Finished */
+   }
+}
+
+/* For extremely small screen devices (767px and below) */
+@media only screen and (max-width: 767px) {
+
+   @keyframes passionate-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      66% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      100% {
+         transform: translateX(-900vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+   @keyframes passionate-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      66% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      100% {
+         transform: translateX(-500vw);  /* <-- Finished */
+      }
+   }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+   @keyframes passionate-scroll-lg {
+      0% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      66% {
+         transform: translateX(100vw);  /* <-- Started */
+      }
+      100% {
+         transform: translateX(-300vw);  /* <-- Finished */
+      }
+   }
+}
