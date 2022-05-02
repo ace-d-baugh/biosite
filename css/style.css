@@ -208,16 +208,45 @@ body {
    width: 100vw;
 }
 
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 .navbar {
    display: flex;
    justify-content: space-between;
    border-bottom: .75em solid var(--blue);
 }
 
-.nav-link a, .foot-link a {
+.navbar a {
+   color: var(--yellow);
+   text-decoration: none;  
+}
+
+.nav-link {
+   transition: background-color 0.5s ease-out;
+}
+
+.foot-link a {
    color: var(--yellow);
    text-decoration: none;
-   transition: background-color 0.5s ease-out;
+}
+
+.nav-link:hover {
+   background-color: var(--yellow);
+   color: var(--blue);
+}
+
+.nav-selected {
+   background-color: var(--orange);
+}
+
+.nav-selected {
+   color: var(--blue);
 }
 
 .card {
