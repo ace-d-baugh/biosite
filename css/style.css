@@ -67,11 +67,11 @@ h4 {
 }
 
 h5 {
-   font-size: small;
+   font-size: smaller;
 }
 
 h6 {
-   font-size: smaller;
+   font-size: x-small;
 }
 
 /* For extremely small screen devices (767px and below) */
@@ -212,12 +212,24 @@ body {
 .navbar {
    display: flex;
    justify-content: space-between;
+   border-bottom: .75em solid var(--blue);
 }
 
 .nav-link a, .foot-link a {
    color: var(--yellow);
    text-decoration: none;
    transition: background-color 0.5s ease-out;
+}
+
+/* HERO SECTION */
+.hero-section {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   left: 0;
+}
+
+.body-section {
 }
 
 .card {
