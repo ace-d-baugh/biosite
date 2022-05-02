@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
+
+:root {
+   --white: #cccccc;
+   --blue: #1c1884;
+   --purple: #523cc6;
+   --orange: #f7820d;
+   --yellow: #ffd605;
+   --regular: 'Poiret One', sans-serif;
+   --accent: 'Limelight', serif;
+}
+
+/* Accent Font */
+.accent {
+   font-family: var(--accent);
+}
+
+/* Regular Font */
+.regular {
+   font-family: var(--regular);
+   font-weight: 900;
+}
+
+body {
+   margin: 0;
+   min-height: 100vh;
+   background-color: var(--white);
+}
+
+.navbar, .footer {
+   width: 100vw;
+   
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo-text {
+   margin: .5em;
+   font-size: 2em;
+}
+
+.nav-links, .foot-links {
+   display: flex;
+   margin-right: 1em;
+}
+
+.nav-link {
+   font-size: 1em;
+   display: flex;
+}
+
+.nav-link a {
+   color: var(--yellow);
+   text-decoration: none;
+   padding: 1.25em;
+   transition: background-color 0.5s ease-out;
+}
+
+.nav-links a:hover {
+   background-color: var(--yellow);
+   color: var(--blue);
+}
+
+.nav-selected {
+   background-color: var(--orange);
+}
+
+.nav-selected a {
+   color: var(--blue);
+}
+
+.body-section {
+   min-height: 100%;
+}
+
+.hero-section {
+   height: 100vh;
+   width: 100vw;
+   overflow: hidden;
+}
+
+.container {
+   margin: auto;
+   width: 80vw;
+}
+
+.timeline {
+   display: flex;
+   justify-content: space-around;
+   padding: 1em;
+}
+
+.card {
+   width: 300px;
+   border: var(--purple) 2px solid;
+   border-radius: 0 0  15px 15px;
+}
+
+.card-photo {
+   display: flex;
+}
+
+.card-caption {
+   background-color: var(--blue);
+   text-align: center;
+   padding: .5em;
+}
+
+.card-text {
+   padding: 1em;
+}
+
+.about, .hobbies {
+   display: flex;
+   padding: 1em;
+}
+
+.hobby-text, .hobby-photo {
+   margin: 0 1em;
+}
+
+.hobbies-photo {
+   display: flex;
+}
+
+.hobbies-photo img, .about-photo img {
+   border: var(--yellow) 6px groove;
+   box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.bio-text p {
+   padding: 1em 1em 1em 0;
+}
+
+.podcast {
+   text-align: center;
+   padding: 1em;
+}
+
+.podcast button {
+   padding: .75em;
+   margin: .5em;
+   cursor: pointer;
+   background-color: var(--purple);
+   border-radius: 5px;
+   color: var(--yellow);
+}
+
+.footer {
+   margin-top: auto;
+   padding: .5em;
+}
+
+.foot-link {
+   margin: 0 1em;
+}
+
+.foot-link a {
+   color: var(--yellow);
+   text-decoration: none;
+}
+
+.font-blue {
+   color: var(--blue);
+}
+
+.font-purple {
+   color: var(--purple);
+}
+
+.font-yellow {
+   color: var(--yellow);
+}
+
+.font-orange {
+   color: var(--orange);
+}
+
+.bg-purple {
+   background-color: var(--purple);
+}
+
+.bg-blue {
+   background-color: var(--blue);
+}
+
+.bg-white {
+   background-color: var(--white);
+}
+
+h1 {
+   font-size: x-large;
+}
+
+h2 {
+   font-size: larger;
+}
+
+h3 {
+   font-size: large;
+}
+
+h4 {
+   font-size: medium;
+}
+
+h5 {
+   font-size: small;
+}
+
+h6 {
+   font-size: smaller;
+}
+
+
+/* HERO SECTION */
+
+.nerdy, .hopeful, .passionate, .hero-image {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: absolute;
+   left: 0;
+}
+
+.nerdy, .hopeful, .passionate {
+   top: 4em;
+}
+
+.hero-image {
+   top: -6em;
+}
+
+.large-text {
+   font-family: var(--accent);
+   font-size: 100vh;
+   color: transparent;
+   -webkit-text-stroke-width: 20px;
+   -webkit-text-stroke-color: var(--yellow);
+   margin-top: -20vh;
+}
+
+.medium-text {
+   width: 100%;
+   font-family: var(--regular);
+   font-weight: 900;
+   font-size: 20em;
+   text-align: center;
+   color: var(--purple);
+}
+
+.small-text {
+   height: 100%;
+   font-family: var(--regular);
+   font-weight: 900;
+   font-size: 20vh;
+   color: var(--orange);
+   margin-top: -40vh;
+}
+
+/* ******NERDY******* */
+.nerdy-sm {
+   animation: nerdy-scroll-sm 15s linear infinite;
+}
+
+.nerdy-md {
+   animation: nerdy-scroll-md 15s linear infinite;
+}
+
+.nerdy-lg {
+   animation: nerdy-scroll-lg 15s linear infinite;
+}
+
+@keyframes nerdy-scroll-lg {
+   0% {
+      transform: translateX(100%);  /* <-- Started */
+   }
+   33% {
+      transform: translateX(-300%);  /* <-- Done and Waiting*/
+   }
+   66% {
+      transform: translateX(-300%);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(-300%);  /* <-- Finished */
+   }
+}
+
+@keyframes nerdy-scroll-md {
+   0% {
+      transform: translateY(100vh);  /* <-- Started */
+   }
+   33% {
+      transform: translateY(-400vh);  /* <-- Done and Waiting*/
+   }
+   66% {
+      transform: translateY(-400vh);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateY(-400vh);  /* <-- Finished */
+   }
+}
+
+@keyframes nerdy-scroll-sm {
+   0% {
+      transform: translateX(-50vw);  /* <-- Started */
+   }
+   33% {
+      transform: translateX(200vw);  /* <-- Done and Waiting*/
+   }
+   66% {
+      transform: translateX(200vw);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(200vw);  /* <-- Finished */
+   }
+}
+
+/* ******HOPEFUL******* */
+.hopeful-sm {
+   animation: hopeful-scroll-sm 15s linear infinite;
+}
+
+.hopeful-md {
+   animation: hopeful-scroll-md 15s linear infinite;
+}
+
+.hopeful-lg {
+   animation: hopeful-scroll-lg 15s linear infinite;
+}
+
+@keyframes hopeful-scroll-lg {
+   0% {
+      transform: translateX(100%);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateX(100%);  /* <-- Started */
+   }
+   66% {
+      transform: translateX(-300%);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(-300%);  /* <-- Finished */
+   }
+}
+
+@keyframes hopeful-scroll-md {
+   0% {
+      transform: translateY(100vh);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateY(100vh);  /* <-- Started */
+   }
+   66% {
+      transform: translateY(-400vh);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateY(-400vh);  /* <-- Finished */
+   }
+}
+
+@keyframes hopeful-scroll-sm {
+   0% {
+      transform: translateX(-50vw);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateX(-50vw);  /* <-- Started */
+   }
+   66% {
+      transform: translateX(200vw);  /* <-- Done and Waiting*/
+   }
+   100% {
+      transform: translateX(200vw);  /* <-- Finished */
+   }
+}
+
+/* ******PASSIONATE******* */
+.passionate-sm {
+   bottom: 10%;
+   left: -75%;
+   animation: passionate-scroll-sm 15s linear infinite;
+}
+
+.passionate-md {
+   animation: passionate-scroll-md 15s linear infinite;
+}
+
+.passionate-lg {
+   right: -420%;
+   animation: passionate-scroll-lg 15s linear infinite;
+}
+
+@keyframes passionate-scroll-lg {
+   0% {
+      transform: translateX(100%);  /* <-- Waiting */
+   }
+   30% {
+      transform: translateX(100%);  /* <-- Waiting */
+   }
+   66% {
+      transform: translateX(100%);  /* <-- Started */
+   }
+   100% {
+      transform: translateX(-400%);  /* <-- Finished */
+   }
+}
+
+@keyframes passionate-scroll-md {
+   0% {
+      transform: translateY(100vh);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateY(100vh);  /* <-- Waiting */
+   }
+   66% {
+      transform: translateY(100vh);  /* <-- Started */
+   }
+   100% {
+      transform: translateY(-400vh);  /* <-- Finished*/
+   }
+}
+
+@keyframes passionate-scroll-sm {
+   0% {
+      transform: translateX(-75vw);  /* <-- Waiting */
+   }
+   33% {
+      transform: translateX(-75vw);  /* <-- Waiting */
+   }
+   66% {
+      transform: translateX(-75vw);  /* <-- Started */
+   }
+   100% {
+      transform: translateX(200vw);  /* <-- Finished*/
+   }
+}
+
+/* *******HERO IMAGE ******** */
+.hero-image {
+   position: relative;
+   overflow: hidden;
+}
+
+.hero-image img {
+   opacity: .2;
+   position: absolute;
+   top: -9999px;
+   bottom: -9999px;
+   left: -9999px;
+   right: -9999px;
+   margin: auto;
+   min-width: 100vw;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 599px) {...}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {...}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {...}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+   .container {
+      width: 50%;
+   }
+}
+
+
+
+
+
+
+
