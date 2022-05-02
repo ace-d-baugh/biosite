@@ -180,13 +180,20 @@ h6 {
 
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
-   
+   .timeline {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .card {
+      width: 275px;
+   }
 }
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
    .container {
-      width: 50%;
+      width: 70%;
       margin: 0 auto;
    }
 
@@ -211,6 +218,27 @@ body {
    color: var(--yellow);
    text-decoration: none;
    transition: background-color 0.5s ease-out;
+}
+
+.card {
+   border: var(--yellow) 2px groove;
+   box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
+   border-radius: 0 0  15px 15px;
+   margin-bottom: 1em;
+}
+
+.card-photo {
+   display: flex;
+}
+
+.card-caption {
+   background-color: var(--blue);
+   text-align: center;
+   padding: .5em;
+}
+
+.card-text {
+   padding: 1em;
 }
 
 
