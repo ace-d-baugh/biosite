@@ -94,8 +94,12 @@ h6 {
       padding: .5em;
    }
 
-   .about-photo img {
+   .about-photo img, .hobbies-photo img {
       max-width: 100%;
+   }
+
+   .hobby-header {
+      text-align: center;
    }
 
    .foot-links {
@@ -134,15 +138,28 @@ h6 {
       padding: 1em;
    }
 
-   .about-photo img {
-      max-width: 20em;
+   .float-right {
       float: right;
       margin: 0 0 1em 1em ;
+   }
+
+   .float-left {
+      float: left;
+      margin: 0 1em 1em 0;
    }
 
    .hobbies-photo img, .about-photo img {
       border: var(--yellow) 6px groove;
       box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
+      max-width: 20em;
+   }
+
+   .hobby-text {
+      padding: .5em 0;
+   }
+
+   .rule {
+      display: none;
    }
    
    .foot-links {
@@ -197,8 +214,11 @@ body {
 }
 
 
-.bio-text p {
+.bio-text p, .hobby-text p {
    text-indent: 2em;
+}
+
+.bio-text p {
    margin: 1em 0;
 }
 
@@ -206,7 +226,6 @@ body {
    clear: both;
    text-align: center;
    padding: 1em;
-   margin-bottom: 5em;
 }
 
 .podcast button {
@@ -216,6 +235,23 @@ body {
    background-color: var(--purple);
    border-radius: 5px;
    color: var(--yellow);
+}
+
+.hobby-header {
+   padding: .5em 0;
+}
+
+.rule {
+   border-color: var(--yellow);
+}
+
+.hobbies {
+   clear: both;
+}
+
+.spacer {
+   clear: both;
+   margin-bottom: 5em;
 }
 
 .footer {

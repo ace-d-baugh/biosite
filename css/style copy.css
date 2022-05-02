@@ -474,6 +474,33 @@ h6 {
 
 
 
+         <!-- Hobbies Section -->
+         <div class="hobbies">
+            <!-- Hobby 2 Photo-->
+            <div class="hobbies-photo">
+               <!-- Movies Photo -->
+            </div>
+            <!-- Hobby Text Section -->
+            <div class="hobby-text regular font-blue">
+               <!-- Hobby 2 Header -->
+               <h1 class="accent"></h1>
+               <!-- Movies Text -->
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>            
+         </div>   
 
-
-
+         <!-- Hobbies Section -->
+         <div class="hobbies">
+            <!-- Hobby Text Section -->
+            <div class="hobby-text regular font-blue">
+               <!-- Hobby 3 Header -->
+               <h1 class="accent">Trying New Food</h1>
+               <!-- Food Text -->
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- Hobby 3 Photo-->            
+            <div class="hobbies-photo">
+               <!-- Food Photo -->
+               <img >
+            </div>
+         </div>   
