@@ -389,7 +389,7 @@
    }
 }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 550px) {
    .large-text {
       font-size: 20em;
       margin-top: -100px;
