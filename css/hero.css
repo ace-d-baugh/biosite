@@ -388,3 +388,22 @@
       }
    }
 }
+
+@media only screen and (max-width: 399px) {
+   .large-text {
+      font-size: 20em;
+      margin-top: -100px;
+   }
+
+   .medium-text {
+      font-size: 8em;
+   }
+
+   .small-text {
+      font-size: 3em;
+   }
+
+   .hero-section {
+      height: 25em;
+   }
+}
