@@ -289,12 +289,23 @@ body::-webkit-scrollbar {
    padding: 1em;
 }
 
-.podcast button {
+.podcast a {
+   text-decoration: none;
+}
+
+.podcast img {
+   width: 300px;
+}
+
+.btn {
+   display:inline ;
    padding: .75em;
-   margin: .5em;
+   margin: .5em auto;
    cursor: pointer;
    background-color: var(--purple);
+   border: 1px solid var(--orange);
    border-radius: 5px;
+   box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
    color: var(--yellow);
 }
 
