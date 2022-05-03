@@ -260,6 +260,10 @@ body::-webkit-scrollbar {
    display: flex;
 }
 
+.card-photo img {
+   width: 100%;
+}
+
 .card-caption {
    background-color: var(--blue);
    text-align: center;
