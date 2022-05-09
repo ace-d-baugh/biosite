@@ -50,6 +50,10 @@
    background-color: var(--white);
 }
 
+.bg-black {
+   background-color: rgba(0,0,0,0.7);
+}
+
 h1 {
    font-size: x-large;
 }
