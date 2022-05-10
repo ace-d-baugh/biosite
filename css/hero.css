@@ -8,14 +8,13 @@
 }
 
 .hero-img {
-   opacity: .6;
-   position: absolute;
-   top: -1700px;
-   bottom: -1700px;
-   left: -1700px;
-   right: -1700px;
-   margin: auto;
-   min-width: 100vw;
+   background-image: url(../img/hero-img.jpg);
+   opacity: .7;
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
 }
 
 .adj {
@@ -23,7 +22,7 @@
    height: 100%;
 }
 
-.nerdy, .hopeful, .passionate, .hero-img {
+.nerdy, .hopeful, .passionate {
    overflow: hidden;
    position: absolute;
 }
